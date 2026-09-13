@@ -1,0 +1,26 @@
+:root {
+  --bg: #450011;
+  --bg-card: #273e06; 
+  --fw: #ffffcc;
+  --fw-muted: #d6d6a8;
+  --border: rgba(255, 255, 204, 0.2);
+  --shadow: rgba(0, 0, 0, 0.2);
+  --font-script: 'Estonia', 'Times New Roman', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--fw);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

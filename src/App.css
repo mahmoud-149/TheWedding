@@ -1,0 +1,326 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 24px 0 32px;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 32px var(--shadow);
+}
+
+.hero-eyebrow {
+  margin: 36px 0 8px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--fw-muted);
+}
+
+.hero-names {
+  margin: 0;
+  font-family: var(--font-script);
+  font-size: 5rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: var(--fw);
+  line-height: 1.1;
+}
+
+.hero-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 24px auto;
+}
+
+.divider-line {
+  width: 90px;
+  height: 1px;
+  background: var(--fw-muted);
+}
+
+.divider-icon {
+  color: var(--fw);
+}
+
+.hero-date-block {
+  display: inline-block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 32px;
+  margin: 0 0 24px;
+}
+
+.hero-date {
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
+  color: var(--fw);
+}
+
+.hero-venue {
+  margin: 0 0 28px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.85rem;
+  color: var(--fw-muted);
+}
+
+.hero-venue a {
+  color: var(--fw);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.rsvp-button {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  background: var(--fw);
+  color: var(--bg);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid var(--fw);
+  border-radius: 14px;
+  transition: opacity 0.2s ease;
+}
+
+.rsvp-button:hover {
+  opacity: 0.9;
+}
+
+.rsvp-bottom {
+  margin-top: 56px;
+  text-align: center;
+}
+
+.rsvp-hint {
+  margin: 12px 0 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8rem;
+  color: var(--fw-muted);
+}
+
+.section-title {
+  text-align: center;
+  font-family: var(--font-script);
+  font-weight: normal;
+  font-size: 2.6rem;
+  letter-spacing: 0.04em;
+  margin: 60px 0 32px;
+  color: var(--fw);
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.countdown-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 8px;
+  text-align: center;
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.countdown-value {
+  display: block;
+  font-size: 2.2rem;
+  color: var(--fw);
+}
+
+.countdown-label {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--fw-muted);
+}
+
+.details {
+  text-align: center;
+}
+
+.details-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 20px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.details-date {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--fw);
+}
+
+.details-venue {
+  margin: 12px 0 0;
+  font-size: 1.3rem;
+  color: var(--fw);
+}
+
+.details-city {
+  margin: 4px 0 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.85rem;
+  color: var(--fw-muted);
+}
+
+.subsection-title {
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  margin: 40px 0 20px;
+  color: var(--fw);
+}
+
+.schedule {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.schedule-item {
+  display: flex;
+  gap: 20px;
+  text-align: left;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-time {
+  flex-shrink: 0;
+  font-size: 1rem;
+  color: var(--fw);
+  letter-spacing: 0.05em;
+}
+
+.schedule-title {
+  margin: 0;
+  font-weight: bold;
+  color: var(--fw);
+}
+
+.schedule-detail {
+  margin: 2px 0 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.82rem;
+  color: var(--fw-muted);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: transform 0.25s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+.footer {
+  text-align: center;
+  padding: 60px 0 40px;
+  border-top: 1px solid var(--border);
+  margin-top: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--fw-muted);
+}
+
+.footer p {
+  margin: 4px 0;
+}
+
+.footer-note {
+  font-style: italic;
+  color: var(--fw);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero-names {
+    font-size: 3.6rem;
+  }
+
+  .hero-divider {
+    margin: 20px auto;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .countdown-card {
+    padding: 16px 4px;
+  }
+
+  .countdown-value {
+    font-size: 1.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
