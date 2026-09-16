@@ -16,7 +16,11 @@ body {
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
   color: var(--fw);
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   line-height: 1.6;
 }
 
