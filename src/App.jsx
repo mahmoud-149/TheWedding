@@ -18,18 +18,17 @@ export default function App() {
         <Details />
       </Reveal>
       <Reveal>
-        <Gallery />
+        {/* <Gallery /> */}
       </Reveal>
       <Reveal>
         <div className="rsvp-bottom">
           <RsvpButton />
-          <p className="rsvp-hint">Kindly reply before September 20, 2026</p>
         </div>
       </Reveal>
       <Reveal>
         <footer className="footer">
           <p>
-            {wedding.groom} &amp; {wedding.bride} — {wedding.dateLabel}
+            {wedding.groom} &amp; {wedding.bride} | {wedding.dateLabel}
           </p>
           <p className="footer-note">We can&apos;t wait to celebrate with you.</p>
         </footer>
